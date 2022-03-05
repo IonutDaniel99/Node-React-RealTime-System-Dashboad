@@ -16,7 +16,7 @@ const onSocketConnection = async (socket) => {
         get_dynamic_data().then((data) => {
             socket.emit('dynamic_system_info', data);   
         })
-    }, 5000);
+    }, 3000);
 
     socket.on("disconnect", ()=> {
         clearInterval(intervalsBySocketId[user_id]);
