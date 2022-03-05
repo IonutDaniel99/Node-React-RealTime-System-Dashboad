@@ -1,0 +1,802 @@
+{
+    "system": {
+        "manufacturer": "LENOVO",
+        "model": "80NV",
+        "version": "Lenovo ideapad Y700-15ISK",
+        "serial": "PF0M28SU",
+        "uuid": "efacfd3a-699c-11e6-b4f4-c85b7654a0df",
+        "sku": "LENOVO_MT_80NV_BU_idea_FM_Lenovo ideapad Y700-15ISK",
+        "virtual": false
+    },
+    "cpu_info": {
+        "manufacturer": "Intel",
+        "brand": "Core™ i7-6700HQ",
+        "vendor": "GenuineIntel",
+        "family": "6",
+        "model": "94",
+        "stepping": "3",
+        "revision": "24067",
+        "voltage": "",
+        "speed": 2.6,
+        "speedMin": 2.6,
+        "speedMax": 2.6,
+        "governor": "",
+        "cores": 8,
+        "physicalCores": 4,
+        "processors": 1,
+        "socket": "Other",
+        "flags": "de pse tsc msr mce sep mtrr mca cmov psn clfsh ds acpi mmx fxsr sse sse2 ss htt tm ia64 pbe",
+        "virtualization": false,
+        "cache": {
+            "l1d": 128,
+            "l1i": 128,
+            "l2": 1048576,
+            "l3": 6291456
+        }
+    },
+    "memory": [
+        {
+            "size": 8589934592,
+            "bank": "BANK 0",
+            "type": "DDR4",
+            "ecc": false,
+            "clockSpeed": 2133,
+            "formFactor": "SODIMM",
+            "manufacturer": "SK Hynix",
+            "partNum": "HMA41GS6AFR8N-TF",
+            "serialNum": "39931816",
+            "voltageConfigured": 1.2,
+            "voltageMin": 1.25,
+            "voltageMax": 1.25
+        },
+        {
+            "size": 8589934592,
+            "bank": "BANK 2",
+            "type": "DDR4",
+            "ecc": false,
+            "clockSpeed": 2133,
+            "formFactor": "SODIMM",
+            "manufacturer": "0215",
+            "partNum": "CMSO8GX4M1A2133C15",
+            "serialNum": "00000000",
+            "voltageConfigured": 1.2,
+            "voltageMin": 1.25,
+            "voltageMax": 1.5
+        }
+    ],
+    "gpu": {
+        "controllers": [
+            {
+                "vendor": "Intel Corporation",
+                "model": "Intel(R) HD Graphics 530",
+                "bus": "PCI",
+                "vram": 1024,
+                "vramDynamic": true,
+                "subDeviceId": "380217AA"
+            },
+            {
+                "vendor": "NVIDIA",
+                "model": "NVIDIA GeForce GTX 960M",
+                "bus": "PCI",
+                "vram": 4096,
+                "vramDynamic": false,
+                "subDeviceId": "0x380217AA",
+                "driverVersion": "511.65",
+                "name": "NVIDIA GeForce GTX 960M",
+                "pciBus": "00000000:01:00.0",
+                "memoryTotal": 4096,
+                "memoryUsed": 549,
+                "memoryFree": 3506,
+                "utilizationGpu": 11,
+                "utilizationMemory": 1,
+                "clockCore": 135,
+                "clockMemory": 405
+            }
+        ],
+        "displays": [
+            {
+                "vendor": "(Standard monitor types)",
+                "model": "Generic PnP Monitor",
+                "deviceName": "\\\\.\\DISPLAY1",
+                "main": false,
+                "builtin": true,
+                "connection": "INTERNAL",
+                "resolutionX": 1920,
+                "resolutionY": 1080,
+                "sizeX": 34,
+                "sizeY": 19,
+                "pixelDepth": "32",
+                "currentResX": 1920,
+                "currentResY": 1080,
+                "positionX": -1920,
+                "positionY": 0
+            },
+            {
+                "vendor": "",
+                "model": "",
+                "deviceName": "\\\\.\\DISPLAY2",
+                "main": true,
+                "builtin": false,
+                "connection": "HDMI",
+                "resolutionX": 1920,
+                "resolutionY": 1080,
+                "sizeX": 53,
+                "sizeY": 30,
+                "pixelDepth": "32",
+                "currentResX": 1920,
+                "currentResY": 1080,
+                "positionX": 0,
+                "positionY": 0
+            }
+        ]
+    },
+    "os": {
+        "os_info": {
+            "platform": "Windows",
+            "distro": "Microsoft Windows 10 Pro",
+            "release": "10.0.19041",
+            "codename": "",
+            "kernel": "10.0.19041",
+            "arch": "x64",
+            "hostname": "Alpha",
+            "fqdn": "ALPHA",
+            "codepage": " 437",
+            "logofile": "windows",
+            "serial": "00331-10000-00001-AA243",
+            "build": "19041",
+            "servicepack": "0.0",
+            "uefi": true,
+            "hypervisor": false,
+            "remoteSession": false
+        },
+        "os_uuid": {
+            "os": "465a9195-5eac-4742-bb3b-e26a812b946e",
+            "hardware": "efacfd3a-699c-11e6-b4f4-c85b7654a0df",
+            "macs": [
+                "68:07:15:c1:12:9f"
+            ]
+        },
+        "os_version": {
+            "kernel": "10.0.19041",
+            "openssl": "1.1.1k",
+            "systemOpenssl": "",
+            "systemOpensslLib": "",
+            "node": "14.17.5",
+            "v8": "8.4.371.23-node.76",
+            "npm": "8.5.3",
+            "yarn": "",
+            "pm2": "5.2.0",
+            "gulp": "",
+            "grunt": "",
+            "git": "2.33.0.windows.2",
+            "tsc": "",
+            "mysql": "",
+            "redis": "",
+            "mongodb": "",
+            "apache": "",
+            "nginx": "",
+            "php": "",
+            "docker": "",
+            "postfix": "",
+            "postgresql": "",
+            "perl": "",
+            "python": "3.10.0",
+            "python3": "",
+            "pip": "21.2.3",
+            "pip3": "21.2.3",
+            "java": "17.0.1",
+            "gcc": "",
+            "virtualbox": "",
+            "bash": "",
+            "zsh": "",
+            "fish": "",
+            "powershell": "5.1.19041.1320:",
+            "dotnet": "4.8.04084"
+        },
+        "os_users": [
+            {
+                "user": "user",
+                "tty": "console",
+                "date": "2022-03-02",
+                "time": "10:10",
+                "ip": "",
+                "command": ""
+            }
+        ]
+    },
+    "usb": [
+        {
+            "bus": null,
+            "deviceId": "USB\\VID_0B05&PID_1910&MI_02\\6&B860B51&1&0002",
+            "id": 1,
+            "name": "Enhanced (101- or 102-key)",
+            "type": "Keyboard",
+            "removable": null,
+            "vendor": null,
+            "manufacturer": "",
+            "maxPower": null,
+            "serialNumber": null
+        },
+        {
+            "bus": null,
+            "deviceId": "USB\\VID_1A2C&PID_2124&MI_00\\6&6905806&1&0000",
+            "id": 2,
+            "name": "Enhanced (101- or 102-key)",
+            "type": "Keyboard",
+            "removable": null,
+            "vendor": null,
+            "manufacturer": "",
+            "maxPower": null,
+            "serialNumber": null
+        },
+        {
+            "bus": null,
+            "deviceId": "PCI\\VEN_8086&DEV_A12F&SUBSYS_380217AA&REV_31\\3&11583659&0&A0",
+            "id": 3,
+            "name": "Intel(R) USB 3.0 eXtensible Host Controller - 1.0 (Microsoft)",
+            "type": "Controller",
+            "removable": null,
+            "vendor": null,
+            "manufacturer": "Generic USB xHCI Host Controller",
+            "maxPower": null,
+            "serialNumber": null
+        },
+        {
+            "bus": null,
+            "deviceId": "USB\\ROOT_HUB30\\4&12012B11&0&0",
+            "id": 4,
+            "name": "USB Root Hub (USB 3.0)",
+            "type": "Hub",
+            "removable": null,
+            "vendor": null,
+            "manufacturer": "",
+            "maxPower": null,
+            "serialNumber": null
+        },
+        {
+            "bus": null,
+            "deviceId": "USB\\VID_5986&PID_0672\\200901010001",
+            "id": 5,
+            "name": "USB Composite Device",
+            "type": "Hub",
+            "removable": null,
+            "vendor": null,
+            "manufacturer": "",
+            "maxPower": null,
+            "serialNumber": null
+        },
+        {
+            "bus": null,
+            "deviceId": "USB\\VID_0B05&PID_1910\\5&25604454&0&3",
+            "id": 6,
+            "name": "USB Composite Device",
+            "type": "Hub",
+            "removable": null,
+            "vendor": null,
+            "manufacturer": "",
+            "maxPower": null,
+            "serialNumber": null
+        },
+        {
+            "bus": null,
+            "deviceId": "USB\\VID_1A2C&PID_2124\\5&25604454&0&2",
+            "id": 7,
+            "name": "USB Composite Device",
+            "type": "Hub",
+            "removable": null,
+            "vendor": null,
+            "manufacturer": "",
+            "maxPower": null,
+            "serialNumber": null
+        }
+    ],
+    "printer": [
+        {
+            "id": 1,
+            "name": "OneNote (Desktop)",
+            "model": "Send to Microsoft OneNote 16 Driver",
+            "uri": null,
+            "uuid": null,
+            "status": "Idle",
+            "local": true,
+            "default": false,
+            "shared": false
+        },
+        {
+            "id": 2,
+            "name": "OneNote for Windows 10",
+            "model": "Microsoft Software Printer Driver",
+            "uri": null,
+            "uuid": null,
+            "status": "Idle",
+            "local": true,
+            "default": false,
+            "shared": false
+        },
+        {
+            "id": 3,
+            "name": "Microsoft XPS Document Writer",
+            "model": "Microsoft XPS Document Writer v4",
+            "uri": null,
+            "uuid": null,
+            "status": "Idle",
+            "local": true,
+            "default": false,
+            "shared": false
+        },
+        {
+            "id": 4,
+            "name": "Microsoft Print to PDF",
+            "model": "Microsoft Print To PDF",
+            "uri": null,
+            "uuid": null,
+            "status": "Idle",
+            "local": true,
+            "default": false,
+            "shared": false
+        },
+        {
+            "id": 5,
+            "name": "Fax",
+            "model": "Microsoft Shared Fax Driver",
+            "uri": null,
+            "uuid": null,
+            "status": "Idle",
+            "local": true,
+            "default": false,
+            "shared": false
+        },
+        {
+            "id": 6,
+            "name": "Adobe PDF",
+            "model": "Adobe PDF Converter",
+            "uri": null,
+            "uuid": null,
+            "status": "Idle",
+            "local": true,
+            "default": true,
+            "shared": false
+        }
+    ],
+    "audio": [
+        {
+            "id": "HDAUDIO\\FUNC_01&VEN_8086&DEV_2809&SUBSYS_80860101&REV_1000\\4&5FDE102&0&0201",
+            "name": "Intel(R) Display Audio",
+            "manufacturer": "Intel(R) Corporation",
+            "revision": null,
+            "driver": null,
+            "default": null,
+            "channel": null,
+            "type": "",
+            "in": null,
+            "out": null,
+            "status": "3"
+        },
+        {
+            "id": "HDAUDIO\\FUNC_01&VEN_10EC&DEV_0235&SUBSYS_17AA3826&REV_1000\\4&5FDE102&0&0001",
+            "name": "Realtek High Definition Audio",
+            "manufacturer": "Realtek",
+            "revision": null,
+            "driver": null,
+            "default": null,
+            "channel": null,
+            "type": "",
+            "in": null,
+            "out": null,
+            "status": "3"
+        },
+        {
+            "id": "ROOT\\UNNAMED_DEVICE\\0000",
+            "name": "NVIDIA Virtual Audio Device (Wave Extensible) (WDM)",
+            "manufacturer": "NVIDIA",
+            "revision": null,
+            "driver": null,
+            "default": null,
+            "channel": null,
+            "type": "",
+            "in": null,
+            "out": null,
+            "status": "3"
+        }
+    ],
+    "ethernet": {
+        "networkInterfaces": [
+            {
+                "iface": "Wi-Fi",
+                "ifaceName": "Intel(R) Dual Band Wireless-AC 3165",
+                "default": true,
+                "ip4": "192.168.1.214",
+                "ip4subnet": "255.255.255.0",
+                "ip6": "2a02:2f0d:b817:2d00:3041:dade:ed79:40d3",
+                "ip6subnet": "ffff:ffff:ffff:ffff::",
+                "mac": "68:07:15:c1:12:9f",
+                "internal": false,
+                "virtual": false,
+                "operstate": "up",
+                "type": "wireless",
+                "duplex": "",
+                "mtu": "",
+                "speed": 433.3,
+                "dhcp": true,
+                "dnsSuffix": "",
+                "ieee8021xAuth": "Not defined",
+                "ieee8021xState": "Disabled",
+                "carrierChanges": 0
+            },
+            {
+                "iface": "Loopback Pseudo-Interface 1",
+                "ifaceName": "Loopback Pseudo-Interface 1",
+                "default": false,
+                "ip4": "127.0.0.1",
+                "ip4subnet": "255.0.0.0",
+                "ip6": "::1",
+                "ip6subnet": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+                "mac": "00:00:00:00:00:00",
+                "internal": true,
+                "virtual": false,
+                "operstate": "down",
+                "type": "",
+                "duplex": "",
+                "mtu": "",
+                "speed": null,
+                "dhcp": false,
+                "dnsSuffix": "",
+                "ieee8021xAuth": "Not defined",
+                "ieee8021xState": "Disabled",
+                "carrierChanges": 0
+            },
+            {
+                "iface": "Ethernet",
+                "ifaceName": "Realtek PCIe GbE Family Controller",
+                "default": false,
+                "ip4": "",
+                "ip4subnet": "",
+                "ip6": "",
+                "ip6subnet": "",
+                "mac": "c8:5b:76:54:a0:df",
+                "virtual": false,
+                "operstate": "down",
+                "type": "wired",
+                "duplex": "",
+                "mtu": "",
+                "speed": 9223372036854.775,
+                "dhcp": false,
+                "dnsSuffix": "",
+                "ieee8021xAuth": "Not defined",
+                "ieee8021xState": "Disabled",
+                "carrierChanges": 0
+            },
+            {
+                "iface": "Local Area Connection* 10",
+                "ifaceName": "Microsoft Wi-Fi Direct Virtual Adapter #2",
+                "default": false,
+                "ip4": "",
+                "ip4subnet": "",
+                "ip6": "",
+                "ip6subnet": "",
+                "mac": "6a:07:15:c1:12:9f",
+                "virtual": true,
+                "operstate": "down",
+                "type": "wireless",
+                "duplex": "",
+                "mtu": "",
+                "speed": 9223372036854.775,
+                "dhcp": false,
+                "dnsSuffix": "",
+                "ieee8021xAuth": "Not defined",
+                "ieee8021xState": "Disabled",
+                "carrierChanges": 0
+            },
+            {
+                "iface": "Bluetooth Network Connection",
+                "ifaceName": "Bluetooth Device (Personal Area Network)",
+                "default": false,
+                "ip4": "",
+                "ip4subnet": "",
+                "ip6": "",
+                "ip6subnet": "",
+                "mac": "68:07:15:c1:12:a3",
+                "virtual": false,
+                "operstate": "down",
+                "type": "wired",
+                "duplex": "",
+                "mtu": "",
+                "speed": 3,
+                "dhcp": true,
+                "dnsSuffix": "",
+                "ieee8021xAuth": "Not defined",
+                "ieee8021xState": "Disabled",
+                "carrierChanges": 0
+            }
+        ],
+        "networkInterfaceDefault": "Wi-Fi",
+        "networkGatewayDefault": "192.168.1.1",
+        "networkStats": [
+            {
+                "iface": "wi-fi",
+                "operstate": "unknown",
+                "rx_bytes": 0,
+                "rx_dropped": 0,
+                "rx_errors": 0,
+                "tx_bytes": 0,
+                "tx_dropped": 0,
+                "tx_errors": 0,
+                "rx_sec": null,
+                "tx_sec": null,
+                "ms": 0
+            }
+        ],
+        "inetLatency": 17
+    },
+    "wifi": {
+        "network": [
+            {
+                "ssid": "Beluga_Mascarpone_5G",
+                "bssid": "10:27:f5:1b:cc:4a",
+                "mode": "",
+                "channel": 48,
+                "frequency": 5240,
+                "signalLevel": -50.5,
+                "quality": 99,
+                "security": [
+                    "WPA2-Personal"
+                ],
+                "wpaFlags": [
+                    "CCMP"
+                ],
+                "rsnFlags": []
+            }
+        ],
+        "inteface": [
+            {
+                "id": "7c244e33-ee00-43cc-b04a-ba82cbe77628",
+                "iface": "Wi-Fi",
+                "model": "Intel(R) Dual Band Wireless-AC 3165",
+                "vendor": "Intel",
+                "mac": "68:07:15:c1:12:9f"
+            }
+        ]
+    },
+    "bluetooth": [
+        {
+            "device": null,
+            "name": "Intel(R) Wireless Bluetooth(R)",
+            "manufacturer": "Intel Corporation",
+            "macDevice": null,
+            "macHost": null,
+            "batteryPercent": null,
+            "type": "",
+            "connected": null
+        },
+        {
+            "device": null,
+            "name": "Headset Audio Gateway Service",
+            "manufacturer": "Microsoft",
+            "macDevice": null,
+            "macHost": null,
+            "batteryPercent": null,
+            "type": "Headset",
+            "connected": null
+        },
+        {
+            "device": null,
+            "name": "Microsoft Bluetooth Enumerator",
+            "manufacturer": "Microsoft",
+            "macDevice": null,
+            "macHost": null,
+            "batteryPercent": null,
+            "type": "",
+            "connected": null
+        },
+        {
+            "device": null,
+            "name": "Headset Audio Gateway Service",
+            "manufacturer": "Microsoft",
+            "macDevice": null,
+            "macHost": null,
+            "batteryPercent": null,
+            "type": "Headset",
+            "connected": null
+        },
+        {
+            "device": null,
+            "name": "Bluetooth Device (RFCOMM Protocol TDI)",
+            "manufacturer": "Microsoft",
+            "macDevice": null,
+            "macHost": null,
+            "batteryPercent": null,
+            "type": "",
+            "connected": null
+        },
+        {
+            "device": null,
+            "name": "PowerLocus P6",
+            "manufacturer": "Microsoft",
+            "macDevice": null,
+            "macHost": null,
+            "batteryPercent": null,
+            "type": "",
+            "connected": null
+        },
+        {
+            "device": null,
+            "name": "Personal Area Network NAP Service",
+            "manufacturer": "Microsoft",
+            "macDevice": null,
+            "macHost": null,
+            "batteryPercent": null,
+            "type": "",
+            "connected": null
+        },
+        {
+            "device": null,
+            "name": "Personal Area Network NAP Service",
+            "manufacturer": "Microsoft",
+            "macDevice": null,
+            "macHost": null,
+            "batteryPercent": null,
+            "type": "",
+            "connected": null
+        },
+        {
+            "device": null,
+            "name": "PowerLocus P6 Avrcp Transport",
+            "manufacturer": "Microsoft",
+            "macDevice": null,
+            "macHost": null,
+            "batteryPercent": null,
+            "type": "",
+            "connected": null
+        },
+        {
+            "device": null,
+            "name": "Echo_Android_1 Avrcp Transport",
+            "manufacturer": "Microsoft",
+            "macDevice": null,
+            "macHost": null,
+            "batteryPercent": null,
+            "type": "",
+            "connected": null
+        },
+        {
+            "device": null,
+            "name": "Object Push Service",
+            "manufacturer": "Microsoft",
+            "macDevice": null,
+            "macHost": null,
+            "batteryPercent": null,
+            "type": "",
+            "connected": null
+        },
+        {
+            "device": null,
+            "name": "Sim Access Service",
+            "manufacturer": "Microsoft",
+            "macDevice": null,
+            "macHost": null,
+            "batteryPercent": null,
+            "type": "",
+            "connected": null
+        },
+        {
+            "device": null,
+            "name": "OPPO Reno5 5G Avrcp Transport",
+            "manufacturer": "Microsoft",
+            "macDevice": null,
+            "macHost": null,
+            "batteryPercent": null,
+            "type": "",
+            "connected": null
+        },
+        {
+            "device": null,
+            "name": "Object Push Service",
+            "manufacturer": "Microsoft",
+            "macDevice": null,
+            "macHost": null,
+            "batteryPercent": null,
+            "type": "",
+            "connected": null
+        },
+        {
+            "device": null,
+            "name": "PowerLocus P6 Avrcp Transport",
+            "manufacturer": "Microsoft",
+            "macDevice": null,
+            "macHost": null,
+            "batteryPercent": null,
+            "type": "",
+            "connected": null
+        },
+        {
+            "device": null,
+            "name": "Echo_Android_1 Avrcp Transport",
+            "manufacturer": "Microsoft",
+            "macDevice": null,
+            "macHost": null,
+            "batteryPercent": null,
+            "type": "",
+            "connected": null
+        },
+        {
+            "device": null,
+            "name": "Phonebook Access Pse Service",
+            "manufacturer": "Microsoft",
+            "macDevice": null,
+            "macHost": null,
+            "batteryPercent": null,
+            "type": "Phone",
+            "connected": null
+        },
+        {
+            "device": null,
+            "name": "OPPO Reno5 5G Avrcp Transport",
+            "manufacturer": "Microsoft",
+            "macDevice": null,
+            "macHost": null,
+            "batteryPercent": null,
+            "type": "",
+            "connected": null
+        },
+        {
+            "device": null,
+            "name": "Phonebook Access Pse Service",
+            "manufacturer": "Microsoft",
+            "macDevice": null,
+            "macHost": null,
+            "batteryPercent": null,
+            "type": "Phone",
+            "connected": null
+        },
+        {
+            "device": null,
+            "name": "Personal Area Network Service",
+            "manufacturer": "Microsoft",
+            "macDevice": null,
+            "macHost": null,
+            "batteryPercent": null,
+            "type": "",
+            "connected": null
+        },
+        {
+            "device": null,
+            "name": "Microsoft Bluetooth LE Enumerator",
+            "manufacturer": "Microsoft",
+            "macDevice": null,
+            "macHost": null,
+            "batteryPercent": null,
+            "type": "",
+            "connected": null
+        },
+        {
+            "device": null,
+            "name": "OPPO Reno5 5G",
+            "manufacturer": "Microsoft",
+            "macDevice": null,
+            "macHost": null,
+            "batteryPercent": null,
+            "type": "",
+            "connected": null
+        },
+        {
+            "device": null,
+            "name": "Echo_Android_1",
+            "manufacturer": "Microsoft",
+            "macDevice": null,
+            "macHost": null,
+            "batteryPercent": null,
+            "type": "",
+            "connected": null
+        },
+        {
+            "device": null,
+            "name": "Personal Area Network Service",
+            "manufacturer": "Microsoft",
+            "macDevice": null,
+            "macHost": null,
+            "batteryPercent": null,
+            "type": "",
+            "connected": null
+        }
+    ]
+}

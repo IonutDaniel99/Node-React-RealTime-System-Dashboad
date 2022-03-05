@@ -1,0 +1,87 @@
+{
+    "battery": {
+        "hasBattery": true,
+        "cycleCount": 0,
+        "isCharging": false,
+        "designedCapacity": 60000,
+        "maxCapacity": 54050,
+        "currentCapacity": 54050,
+        "voltage": 16.451,
+        "capacityUnit": "mWh",
+        "percent": 100,
+        "timeRemaining": null,
+        "acConnected": true,
+        "type": "",
+        "model": "1074SMPL14M4P23",
+        "manufacturer": "",
+        "serial": ""
+    },
+    "disks": [
+        {
+            "fs": "C:",
+            "type": "NTFS",
+            "size": 511455584256,
+            "used": 189579247616,
+            "available": 321876336640,
+            "use": 37.07,
+            "mount": "C:"
+        },
+        {
+            "fs": "D:",
+            "type": "NTFS",
+            "size": 324352864256,
+            "used": 163898703872,
+            "available": 160454160384,
+            "use": 50.53,
+            "mount": "D:"
+        },
+        {
+            "fs": "F:",
+            "type": "NTFS",
+            "size": 322228449280,
+            "used": 77660581888,
+            "available": 244567867392,
+            "use": 24.1,
+            "mount": "F:"
+        },
+        {
+            "fs": "G:",
+            "type": "NTFS",
+            "size": 353619668992,
+            "used": 665034752,
+            "available": 352954634240,
+            "use": 0.19,
+            "mount": "G:"
+        }
+    ],
+    "load": {
+        "current_load": {
+            "currentLoad": 87.93139249968853,
+            "currentLoadIdle": 12.068607500311474,
+            "currentLoadSystem": 30.242119689355874,
+            "currentLoadUser": 57.36533909215499
+        },
+        "processes": 309
+    },
+    "memory_info": {
+        "total": 16999284736,
+        "used": 10880581632,
+        "available": 6118703104
+    },
+    "wifi": [
+        {
+            "id": "7c244e33-ee00-43cc-b04a-ba82cbe77628",
+            "iface": "Wi-Fi",
+            "model": "Intel(R) Dual Band Wireless-AC 3165",
+            "ssid": "Beluga_Mascarpone_5G",
+            "bssid": "10:27:f5:1b:cc:4a",
+            "channel": 48,
+            "frequency": 5240,
+            "type": "802.11ac",
+            "security": "WPA2-Personal",
+            "signalLevel": "85%",
+            "txRate": 433
+        }
+    ],
+    "time": 1646510708324
+}
