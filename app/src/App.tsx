@@ -20,7 +20,6 @@ function App() {
     console.log(dynamicData);
   }, [dynamicData])
 
-
   return (
     <>
       <pre>
