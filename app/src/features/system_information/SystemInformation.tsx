@@ -1,4 +1,3 @@
-import React from 'react';
 import { useEffect, useState } from "react";
 import static_data from '../../mock/static_data.json';
 import dynamic_data from '../../mock/dynamic_data.json';
