@@ -19,7 +19,7 @@ import onSocketDisconnect from './server_commons/services/onSocketDisconnect'
 import onSocketConnection from './server_commons/services/onSocketConnection'
 
 io.on("connection", (socket) => {
-    onSocketConnection(socket);
+    onSocketConnection(socket, io);
     socket.on("disconnect", () => {
         onSocketDisconnect(socket);
     });

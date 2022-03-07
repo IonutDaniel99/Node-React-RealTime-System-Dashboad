@@ -1,26 +1,26 @@
-import { get_static_data} from '../plugins/sysinfo/get_static_data';
-import { get_dynamic_data} from '../plugins/sysinfo/get_dynamic_data';
+import { get_static_data } from '../plugins/sysinfo/get_static_data';
+import { local_state } from '../state/local_state';
+import { get_battery } from '../plugins/sysinfo/sys_battery';
+import { timeLog } from '../utils/timeLog'
 
-
-let intervalsBySocketId = {};
 
 const onSocketConnection = async (socket) => {
     const user_id = socket.id;
     console.log(`User ${user_id} has connected`)
-    
-    get_static_data().then((data) => {
-        socket.emit('static_system_info', data)
-    })
 
-    intervalsBySocketId[user_id] = setInterval(() => {
-        get_dynamic_data().then((data) => {
-            socket.emit('dynamic_system_info', data);   
+    if (Object.keys(local_state.static_system_information).length !== 0) {
+        socket.emit('send_static_data', local_state.static_system_information)
+    } else {
+        get_static_data().then((data) => {
+            Object.assign(local_state.static_system_information, data)
+            socket.emit('send_static_data', data)
         })
-    }, 3000);
-
-    socket.on("disconnect", ()=> {
-        clearInterval(intervalsBySocketId[user_id]);
-        delete intervalsBySocketId[user_id];
+    }
+    // timeLog(get_battery());
+    socket.on("request_server_battery", () => {
+        get_battery().then(data => {
+            socket.emit('callback_server_battery', data)
+        })
     })
 }
 
