@@ -1,4 +1,4 @@
-export interface Battery_data {
+export interface BatteryData {
     hasBattery: boolean,
     cycleCount: number,
     isCharging: boolean,

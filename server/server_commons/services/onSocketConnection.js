@@ -1,6 +1,8 @@
 import { get_static_data } from '../plugins/sysinfo/get_static_data';
 import { local_state } from '../state/local_state';
 import { get_battery } from '../plugins/sysinfo/sys_battery';
+import { get_disks } from '../plugins/sysinfo/sys_file';
+
 import { timeLog } from '../utils/timeLog'
 
 
@@ -16,10 +18,14 @@ const onSocketConnection = async (socket) => {
             socket.emit('send_static_data', data)
         })
     }
-    // timeLog(get_battery());
     socket.on("request_server_battery", () => {
         get_battery().then(data => {
             socket.emit('callback_server_battery', data)
+        })
+    })
+    socket.on("request_server_disk", () => {
+        get_disks().then(data => {
+            socket.emit('callback_server_disk', data)
         })
     })
 }

@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
-import { Battery_data } from '../../features/system_information/types'
+import { BatteryData } from './types'
 
 interface BatteryProps {
-  batteryData?: Battery_data
+  batteryData?: BatteryData
 }
 
 const BatteryComponent = ({ batteryData }: BatteryProps) => {
-  console.log("BatteryComponent", batteryData);
+  console.log("BatteryComponent", Date.now(),  batteryData);
   return (
     <div>BatteryComponents</div>
   )
