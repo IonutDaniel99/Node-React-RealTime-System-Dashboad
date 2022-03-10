@@ -3,7 +3,8 @@ import SideMenu from "./layout/sideMenu/SideMenu";
 import ContentMenu from "./layout/contentMenu/ContentMenu";
 import SystemInformation from "./features/system_information/SystemInformation";
 import styled from "styled-components";
-import { useEffect } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import TestLayout from "./features/test_area/TestLayout";
 
 
 function App() {
@@ -11,10 +12,16 @@ function App() {
   return (
     <AppWrapperStyled>
       <ContainerStyled tabIndex={ -1 }>
-        <SideMenu />
-        <ContentMenu>
-            <SystemInformation />
-        </ContentMenu>
+        <BrowserRouter>
+          <SideMenu />
+          <ContentMenu>
+            <Routes>
+              <Route path="/" element={<SystemInformation />} />
+              <Route path="system" element={<SystemInformation />} />
+              <Route path="cars" element={<TestLayout />} />
+            </Routes>
+          </ContentMenu>
+        </BrowserRouter>
       </ContainerStyled>
     </AppWrapperStyled>
   );
