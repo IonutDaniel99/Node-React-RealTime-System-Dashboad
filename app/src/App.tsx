@@ -16,7 +16,7 @@ function App() {
           <SideMenu />
           <ContentMenu>
             <Routes>
-              <Route path="/" element={<SystemInformation />} />
+              <Route path="/" element={<div>Cocostarc</div>} />
               <Route path="system" element={<SystemInformation />} />
               <Route path="cars" element={<TestLayout />} />
             </Routes>
