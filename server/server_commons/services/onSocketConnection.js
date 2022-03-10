@@ -4,6 +4,9 @@ import { get_battery } from '../plugins/sysinfo/sys_battery';
 import { get_disks } from '../plugins/sysinfo/sys_file';
 
 import { timeLog } from '../utils/timeLog'
+import { get_current_load } from '../plugins/sysinfo/sys_load';
+import { get_memory } from '../plugins/sysinfo/sys_mem';
+import { get_wifi_connections } from '../plugins/sysinfo/sys_wifi';
 
 
 const onSocketConnection = async (socket) => {
@@ -26,6 +29,25 @@ const onSocketConnection = async (socket) => {
     socket.on("request_server_disk", () => {
         get_disks().then(data => {
             socket.emit('callback_server_disk', data)
+        })
+    })
+    socket.on("request_server_current_load", () => {
+        get_current_load().then(data => {
+            socket.emit('callback_server_current_load', data)
+        })
+    })
+    /**
+     * DONT FRGET PROCESSES
+     */
+
+    socket.on("request_server_memory", () => {
+        get_memory().then(data => {
+            socket.emit('callback_server_memory', data)
+        })
+    })
+    socket.on("request_server_wifi", () => {
+        get_wifi_connections().then(data => {
+            socket.emit('callback_server_wifi', data)
         })
     })
 }

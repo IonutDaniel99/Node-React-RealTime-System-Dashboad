@@ -6,6 +6,8 @@ export const get_wifi_networks = async () => {
 export const get_wifi_interfaces = async () => {
     return await si.wifiInterfaces();
 }
+
+//dynamic
 export const get_wifi_connections = async () => {
     return await si.wifiConnections();
 }

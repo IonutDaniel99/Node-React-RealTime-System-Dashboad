@@ -1,12 +1,14 @@
-import React from 'react'
-import { DiskDataObj } from './types'
+import React, { useEffect } from 'react'
+import { DiskDataObjInterface } from './types'
 
 interface DiskProps {
-    diskData?: DiskDataObj
+    diskData?: DiskDataObjInterface
 }
 
 const DiskComponent = ({ diskData }: DiskProps) => {
-    console.log('diskComponent', Date.now() ,diskData)
+    useEffect(() => {
+        console.log("diskData", Date.now(), diskData);
+    }, [diskData])
     return (
         <div>DiskComponent</div>
     )

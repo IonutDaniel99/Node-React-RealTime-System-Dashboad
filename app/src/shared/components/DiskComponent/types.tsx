@@ -1,4 +1,4 @@
-export type DiskData = {
+export type DiskInterface = {
     fs: string;
     dataType: string;
     size: number;
@@ -8,4 +8,4 @@ export type DiskData = {
     mount: string;
   };
   
-  export type DiskDataObj = DiskData[];
+  export type DiskDataObjInterface = DiskInterface[];

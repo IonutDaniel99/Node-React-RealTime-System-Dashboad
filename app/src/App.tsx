@@ -3,15 +3,17 @@ import SideMenu from "./layout/sideMenu/SideMenu";
 import ContentMenu from "./layout/contentMenu/ContentMenu";
 import SystemInformation from "./features/system_information/SystemInformation";
 import styled from "styled-components";
+import { useEffect } from "react";
 
 
 function App() {
+
   return (
     <AppWrapperStyled>
       <ContainerStyled tabIndex={-1}>
         <SideMenu />
         <ContentMenu>
-          <SystemInformation />
+          {/* <SystemInformation /> */}
         </ContentMenu>
       </ContainerStyled>
     </AppWrapperStyled>
