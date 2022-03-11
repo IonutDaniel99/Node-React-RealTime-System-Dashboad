@@ -1,7 +1,12 @@
 import { LinkProps, useResolvedPath, useMatch, Link } from "react-router-dom";
-import styled from "styled-components";
+import { StyledSpan } from "./styled";
+import IconComponent from "../icons/IconComponent/IconComponent"
 
-export function CustomRouterLink({ children, to, ...props }: LinkProps) {
+interface IconElementProps {
+  icon: JSX.Element | JSX.Element[];
+}
+
+export function CustomRouterLink({ children, to, ...props }: LinkProps & IconElementProps) {
     let resolved = useResolvedPath(to);
     let match = useMatch({ path: resolved.pathname, end: true });
     return (
@@ -12,19 +17,9 @@ export function CustomRouterLink({ children, to, ...props }: LinkProps) {
           {...props}
         >
           {match && <StyledSpan /> }
-          {children}
+          <IconComponent active={match} icon={props.icon} />
         </Link>
-
+      
       </div>
     );
   }
-
-  const StyledSpan = styled.div`
-    border-left: 2px solid #65BFFF;
-    position: relative;
-    height: 32px;
-    overflow: hidden;
-    right: 10px;
-    margin: auto 0;
-    margin-right: 0px;
-  `
