@@ -1,25 +1,28 @@
 import { useEffect, useState } from "react";
 
 import socketIOClient from "socket.io-client";
-import BatteryComponent from "../../shared/components/BatteryComponent/BatteryComponent";
-import { BatteryDataInterface } from "../../shared/components/BatteryComponent/types";
+import BatteryComponent from "../../shared/components/SystemInformation/BatteryComponent/BatteryComponent";
+import { BatteryDataInterface } from "../../shared/components/SystemInformation/BatteryComponent/types";
 
-import CurrentLoadComponent from "../../shared/components/CurrentLoadComponent/CurrentLoadComponent";
-import { CurrentLoadInterface } from "../../shared/components/CurrentLoadComponent/types";
+import CurrentLoadComponent from "../../shared/components/SystemInformation/CurrentLoadComponent/CurrentLoadComponent";
+import { CurrentLoadInterface } from "../../shared/components/SystemInformation/CurrentLoadComponent/types";
 
-import DiskComponent from "../../shared/components/DiskComponent/DiskComponent";
-import { DiskDataObjInterface } from "../../shared/components/DiskComponent/types";
+import DiskComponent from "../../shared/components/SystemInformation/DiskComponent/DiskComponent";
+import { DiskDataObjInterface } from "../../shared/components/SystemInformation/DiskComponent/types";
 
-import MemoryComponent from "../../shared/components/MemoryComponent/MemoryComponent";
-import { MemoryInterface } from "../../shared/components/MemoryComponent/types";
-import { WifiDataObjInterface } from "../../shared/components/WifiComponent/types";
-import WifiComponent from "../../shared/components/WifiComponent/WifiComponent";
+import MemoryComponent from "../../shared/components/SystemInformation/MemoryComponent/MemoryComponent";
+import { MemoryInterface } from "../../shared/components/SystemInformation/MemoryComponent/types";
+
+import { WifiDataObjInterface } from "../../shared/components/SystemInformation/WifiComponent/types";
+import WifiComponent from "../../shared/components/SystemInformation/WifiComponent/WifiComponent";
 
 const ENDPOINT = "http://localhost:5000";
 
 const socket = socketIOClient(ENDPOINT);
 
 const SystemInformation = () => {
+  const [isServerOnline, setIsServerOnline] = useState<boolean>(true);
+
   const [batteryData, setBatteryData] = useState<BatteryDataInterface>();
   const [diskData, setDiskData] = useState<DiskDataObjInterface>();
   const [currentLoadData, setCurrentLoadData] = useState<CurrentLoadInterface>();
@@ -27,6 +30,21 @@ const SystemInformation = () => {
   const [wifiData, setWifiData] = useState<WifiDataObjInterface>();
 
   useEffect(() => {
+    socket.on("connect", () => {
+      setIsServerOnline(true);
+      console.log("connect");
+    });
+
+    socket.on("connect_error", (reason) => {
+      setIsServerOnline(false);
+      console.log("error", reason);
+    });
+    
+    socket.on("disconnect", (err) => {
+      setIsServerOnline(false);
+      console.log("disconnect", err);
+    });
+
     socket.on("send_static_data", (data) => {console.log(data);});
     socket.on('callback_server_battery', (data : BatteryDataInterface) => {setBatteryData(data)}); // Request for disk battery
     socket.on('callback_server_disk', (data : DiskDataObjInterface) => {setDiskData(data)}); // Request for disk data
@@ -70,6 +88,7 @@ const SystemInformation = () => {
       socket.emit('request_server_wifi'); // Call for wifi data
     }, 30000);
 
+
     return () => {
       clearInterval(battery_interval);
       clearInterval(server_interval);
@@ -82,13 +101,15 @@ const SystemInformation = () => {
 
   return (
     <>
-    <div>
-      {batteryData && <BatteryComponent batteryData={batteryData} /> }
-      {diskData && <DiskComponent diskData={diskData} /> }
-      {currentLoadData && <CurrentLoadComponent currentLoadData={currentLoadData} /> }
-      {memoryData && <MemoryComponent memoryData={memoryData} /> }
-      {wifiData && <WifiComponent wifiData={wifiData} /> }
-    </div>
+    {isServerOnline === true ?
+      <div>
+        {batteryData && <BatteryComponent batteryData={batteryData} /> }
+        {diskData && <DiskComponent diskData={diskData} /> }
+        {currentLoadData && <CurrentLoadComponent currentLoadData={currentLoadData} /> }
+        {memoryData && <MemoryComponent memoryData={memoryData} /> }
+        {wifiData && <WifiComponent wifiData={wifiData} /> }
+      </div> : "test"
+    }
     </>
   )
 }

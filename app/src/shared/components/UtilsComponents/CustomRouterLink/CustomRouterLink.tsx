@@ -1,6 +1,6 @@
 import { LinkProps, useResolvedPath, useMatch, Link } from "react-router-dom";
+import IconComponent from "../../../icons/IconComponent/IconComponent"
 import { StyledSpan } from "./styled";
-import IconComponent from "../icons/IconComponent/IconComponent"
 
 interface IconElementProps {
   icon: JSX.Element | JSX.Element[];
