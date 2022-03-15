@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
-import { MemoryInterface } from './types'
+import { MemoryDataInterface } from './types'
 
 interface MemoryProps {
-    memoryData?: MemoryInterface
+    memoryData?: MemoryDataInterface
 }
 
 const MemoryComponent = ({ memoryData }: MemoryProps) => {

@@ -1,7 +1,6 @@
-export type CurrentLoadInterface = {
+export type CurrentLoadDataInterface = {
     currentLoad: number,
     currentLoadIdle: number,
     currentLoadSystem: number,
     currentLoadUser: number,
 };
-  

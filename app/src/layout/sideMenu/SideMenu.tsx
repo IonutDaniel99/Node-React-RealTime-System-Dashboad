@@ -1,14 +1,14 @@
 import { CustomRouterLink } from "../../shared/components/UtilsComponents/CustomRouterLink/CustomRouterLink"
 import { SideMenuStyledWrapper } from "./style"
 
-import MemoryIcon from '@mui/icons-material/Memory';
-import ThermostatIcon from '@mui/icons-material/Thermostat';
+import StorageIcon from '@mui/icons-material/Storage';
+import ServerLocationIcon from "../../shared/icons/ServerLocationIcon/ServerLocationIcon";
 
 const SideMenu = () => {
   return (
     <SideMenuStyledWrapper>
-      <CustomRouterLink to="/system" icon={ <MemoryIcon/> } />
-      <CustomRouterLink to="/cars" icon={ <ThermostatIcon/> } />
+      <CustomRouterLink to="/system" icon={<StorageIcon />} />
+      <CustomRouterLink to="/cars" icon={<ServerLocationIcon />} />
 
     </SideMenuStyledWrapper>
   )

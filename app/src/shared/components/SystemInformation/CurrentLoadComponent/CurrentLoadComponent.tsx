@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
-import { CurrentLoadInterface } from './types'
+import { CurrentLoadDataInterface } from './types'
 
 interface CurrentLoadProps {
-  currentLoadData?: CurrentLoadInterface
+  currentLoadData?: CurrentLoadDataInterface
 }
 
 const CurrentLoadComponent = ({ currentLoadData }: CurrentLoadProps) => {
